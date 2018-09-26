@@ -21,7 +21,9 @@ class RestroomCard extends Component {
     const restroomRef = firebaseDatabase.ref(restroomCode);
     restroomRef.on('value', (snapshot) => {
       const data = snapshot.val();
-      this.setState({ occupied: data.occupied });
+      if (data) {
+        this.setState({ occupied: data.occupied });
+      }
     });
   }
 
