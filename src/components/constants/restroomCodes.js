@@ -1,5 +1,5 @@
 const RESTROOM_CODES = Object.freeze({
-  SIXTH_MASC: '6-masc',
+  SIXTH_MASC_CONS: '6-masc-cons',
 });
 
 export default RESTROOM_CODES;
