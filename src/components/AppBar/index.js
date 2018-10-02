@@ -7,7 +7,7 @@ const AppBar = () => (
   <MuiAppBar position="static">
     <Toolbar>
       <Typography variant="title" color="inherit">
-        Golden line
+        Golden Line
       </Typography>
     </Toolbar>
   </MuiAppBar>

@@ -32,7 +32,7 @@ class RestroomCard extends Component {
     const { title } = this.props;
     return (
       <StyledPaper>
-        <Typography variant="title" color="inherit">
+        <Typography variant="subheading" color="inherit">
           {title}
         </Typography>
         { occupied !== '' ? (<StatusCircle occupied={occupied} />) : <StyledProgress size={25} /> }

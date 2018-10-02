@@ -1,9 +1,19 @@
 import React from 'react';
 import RestroomCard from '../RestroomCard';
-import RESTROOM_CODES from '../constants/restroomCodes';
+import RESTROOM_INFOS from '../../constants/restroomInfos';
 
-const Restroom = () => (
-  <RestroomCard restroomCode={RESTROOM_CODES.SIXTH_MASC_CONS} title="6º Andar - Masculino - Consolação" />
-);
+const RestroomList = () => {
+  const restrooms = Object.keys(RESTROOM_INFOS).map((restroom) => {
+    const { code: restroomCode, name: title } = RESTROOM_INFOS[restroom];
+    return (
+      <RestroomCard
+        key={restroomCode}
+        restroomCode={restroomCode}
+        title={title}
+      />
+    );
+  });
+  return restrooms;
+};
 
-export default Restroom;
+export default RestroomList;

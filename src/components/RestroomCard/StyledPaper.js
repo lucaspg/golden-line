@@ -5,7 +5,7 @@ const StyledPaper = styled(Paper)`
     margin: 20px;
     padding: 15px 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 `;
 
